@@ -14,4 +14,4 @@ A simple Dogecoin-themed dice roller webpage for crypto enthusiasts.
 Open the `index.html` file in your browser or visit the live demo link above.
 
 ## Learn more about Dogecoin Casinos
-🎲 Head to the [Bitcoin Dice website]([https://bitcoindice.info/crypto-dice](https://bitcoindice.info/crypto-dice/dogecoin-casinos/) for more information about crypto casinos accepting Dogecoin.
+🎲 Head to the [Bitcoin Dice website](https://bitcoindice.info/crypto-dice/dogecoin-casinos/) for more information about crypto casinos accepting Dogecoin.
