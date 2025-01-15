@@ -1,2 +1,2 @@
-# dogecoindice
+# dogecoin-dice
 dogecoindice
