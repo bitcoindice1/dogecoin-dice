@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dogecoin Dice: Roll a Dogecoin-themed dice and enjoy the thrill of crypto gambling fun!">
+    <meta name="keywords" content="Dogecoin, dice, crypto, gambling, Dogecoin dice, crypto dice game">
+    <meta name="author" content="Michal Jurcenko">
+    <title>Dogecoin Dice - Crypto Fun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #ff9900;
+            font-size: 3rem;
+        }
+
+        .dice {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            background: url('https://cryptologos.cc/logos/dogecoin-doge-logo.png?v=023') no-repeat center;
+            background-size: contain;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #cc7a00;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dogecoin Dice</h1>
+        <div class="dice" id="dice">🎲</div>
+        <button onclick="rollDice()">Roll the Dice</button>
+        <p id="result"></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Michal Jurcenko - Dogecoin Dice</p>
+    </footer>
+
+    <script>
+        function rollDice() {
+            const diceResult = Math.floor(Math.random() * 6) + 1;
+            const dice = document.getElementById('dice');
+            const result = document.getElementById('result');
+
+            dice.textContent = diceResult;
+
+            result.textContent = `You rolled a ${diceResult}!`;
+        }
+    </script>
+</body>
+</html>
